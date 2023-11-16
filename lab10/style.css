@@ -1,0 +1,33 @@
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the flex container */
+}
+
+/* Add styling for the search area */
+.navbar-search {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-search input {
+    flex: 1; /* Take remaining space */
+}
+
+/* Your existing styles */
+.card.mens_clothing .card-header {
+    background: lightblue;
+}
+
+.card.womens_clothing .card-header {
+    background: lightpink;
+}
+
+.card.jewelery .card-header {
+    background: lightgoldenrodyellow;
+}
+
+.card.electronics .card-header {
+    background: lightgrey;
+}

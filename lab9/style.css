@@ -1,0 +1,14 @@
+*{
+    background-color: yellow;
+}
+
+body {
+    background-color: #4CAF50;
+}
+
+#main {
+    background-color: red;
+}
+.temp {
+    background-color: blue;
+}

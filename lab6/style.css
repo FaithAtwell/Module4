@@ -1,0 +1,31 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgb(114, 113, 113);
+    padding: 20px;
+    border-radius: 1px;
+}
+
+h1.mb-4 {
+    background-color: #c7a8ea;
+    text-align: center;
+}
+
+label[for="post-limit"] {
+    color: #010c01;
+}
+
+.card {
+    height: 100%;
+}
+
+
+.card-body {
+    max-height: 200px;
+    overflow: hidden;
+}

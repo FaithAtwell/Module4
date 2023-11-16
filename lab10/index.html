@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <title>Products eCommerce Store</title>
+    <style> /* com */
+        /* Add your existing CSS styles here */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7a7b80;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .navbar {
+            background-color: #89c089;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #125b0c;
+            color: black;
+        }
+        .filters {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Product</a>
+    <a href="#" onclick="viewCart()">Cart</a>
+</div>
+<div class="container p-3">
+    <h2>Fake eCommerce Store</h2>
+    <div class="filters">
+        <select name="category_filter" id="category_filter" onchange="filterProducts()">
+            <option>All Products</option>
+            <option>men's clothing</option>
+            <option>jewelery</option>
+            <option>women's clothing</option>
+            <option>electronics</option>
+            <!-- Add your categories dynamically if needed -->
+        </select>
+
+        <div id="sort">
+            <label>Sort By:
+                <select name="sort_order" id="sort_order" onchange="sortProducts()">
+                    <option value="id">Default ordering</option>
+                    <option value="price_lohi">Price (low to high)</option>
+                    <option value="price_hilo">Price (high to low)</option>
+                    <option value="title_az">Title (A to Z)</option>
+                    <option value="title_za">Title (Z to A)</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="search" class="navbar-search">
+            <input name="searchText" id="searchText" placeholder="Search products...">
+            <button class="btn btn-primary" onclick="searchProducts()">Search</button>
+        </div>
+    </div>
+    <div id="product-list" class="row g-5 py-5"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="NewsBox">
+    <div id="NewsForm" class="AddContentBox">
+        <h2>UPDATE NEWS</h2>
+        <label for="news-title">Title:</label>
+        <input type="text" id="news-title" placeholder="Enter title">
+        <label for="news-content">Content:</label>
+        <textarea id="news-content" placeholder="Add News Content"></textarea>
+        <button class="btn" onclick="addNewsItem()">Submit News</button>
+    </div>
+    <div id="NewsCont"></div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPOST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<section class = "BigSection">
+    <div class="container mt-5">
+        <h1 class="mb-4">post boards</h1>
+        <div class="form-group">
+            <label for="post-limit">select number of posts:</label>
+            <input type="number" class="form-control" id="post-limit" value="10" min="1" max="100">
+        </div>
+        <button class="btn btn-primary mb-3" onclick="fetchPosts()">Find Posts</button>
+        <div class="row" id="posts-container"></div>
+    </div>
+</section>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.slider {
+    width: 100px;
+    height: 100px;
+    background-color: #b960f5;
+    position: relative;
+    animation: slide 4s linear infinite;
+}
+@keyframes slide {
+    0%, 100% {
+        top: 0;
+        background-color: #dc1811;
+    }
+    50% {
+        top: 200px;
+        background-color: #fcd71c;
+    }}
