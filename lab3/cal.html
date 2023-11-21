@@ -28,7 +28,6 @@
         <button data-equals class="span-two" onclick="calculate()"> = </button>
     </div>
 </div>
-
 <script>
     let currentInput = '';
     let currentOperation = null;
@@ -36,9 +35,7 @@
 
     function appendNumber(number) {
         currentInput += number;
-        updateDisplay();
-    }
-
+        updateDisplay();}
     function setOperation(operation) {
         if (currentInput === '') return;
         if (previousInput !== '') {
@@ -48,7 +45,6 @@
         previousInput = currentInput;
         currentInput = '';
     }
-
     function calculate() {
         let result;
         const prev = parseFloat(previousInput);
@@ -72,7 +68,6 @@
             default:
                 return;
         }
-
         currentInput = result.toString();
         currentOperation = null;
         previousInput = '';
